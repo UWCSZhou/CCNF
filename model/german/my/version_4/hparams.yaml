@@ -1,0 +1,326 @@
+args:
+- !!python/object:scm.dag.DAG
+  causal_layers:
+  - !!python/object:scm.dag.CausalLayer
+    edges:
+      2:
+      - 0
+      - 1
+      6:
+      - 0
+      - 1
+    ends:
+    - 2
+    - 6
+    starts:
+    - 0
+    - 1
+  - !!python/object:scm.dag.CausalLayer
+    edges:
+      3:
+      - 2
+      7:
+      - 0
+      - 1
+      - 6
+    ends:
+    - 3
+    - 7
+    starts:
+    - 0
+    - 1
+    - 2
+    - 6
+  - !!python/object:scm.dag.CausalLayer
+    edges:
+      4:
+      - 2
+      - 3
+    ends:
+    - 4
+    starts:
+    - 2
+    - 3
+  - !!python/object:scm.dag.CausalLayer
+    edges:
+      5:
+      - 2
+      - 3
+      - 4
+    ends:
+    - 5
+    starts:
+    - 2
+    - 3
+    - 4
+  - !!python/object:scm.dag.CausalLayer
+    edges:
+      8:
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+    ends:
+    - 8
+    starts:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  depth: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - &id002 !!python/name:numpy.ndarray ''
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 9
+    - &id001 !!python/object/apply:numpy.dtype
+      args:
+      - u4
+      - false
+      - true
+      state: !!python/tuple
+      - 3
+      - <
+      - null
+      - null
+      - null
+      - -1
+      - -1
+      - 0
+    - false
+    - !!binary |
+      AAAAAAAAAAABAAAAAgAAAAMAAAAEAAAAAQAAAAIAAAAFAAAA
+  diam: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BQAAAA==
+  dim: 9
+  ends_adj: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id002
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 9
+      - 9
+    - &id003 !!python/object/apply:numpy.dtype
+      args:
+      - i8
+      - false
+      - true
+      state: !!python/tuple
+      - 3
+      - <
+      - null
+      - null
+      - null
+      - -1
+      - -1
+      - 0
+    - true
+    - !!binary |
+      AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAB
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA
+      AAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  nodes:
+  - - 0
+    - 1
+  - - 2
+    - 6
+  - - 3
+    - 7
+  - - 4
+  - - 5
+  - - 8
+  start_nodes:
+  - 0
+  - 1
+  starts_adj: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id002
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 9
+      - 9
+    - *id003
+    - false
+    - !!binary |
+      AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAB
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA
+      AAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+- - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 5
+- - 64
+  - 64
+- !!python/object/apply:torch._utils._rebuild_tensor_v2
+  - !!python/object/apply:torch.storage._load_from_bytes
+    - !!binary |
+      gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+      AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+      aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+      Z2UKcQFYDgAAADk0ODQwODYwMTExMDU2cQJYAwAAAGNwdXEDSxJOdHEEUS6AAl1xAFgOAAAAOTQ4
+      NDA4NjAxMTEwNTZxAWEuEgAAAAAAAAAAAJhBAACWQgAAAAAAAIA/AAAAAAAAQEAAAAAAAAAAQAAA
+      AAAAAIBAAAAAAAAAQEAAAHpDAPCPRgAAgEAAAJBCAAAAAAAAgD8=
+  - 0
+  - !!python/tuple
+    - 9
+    - 2
+  - !!python/tuple
+    - 2
+    - 1
+  - false
+  - !!python/object/apply:collections.OrderedDict
+    - []
+- !!python/object/apply:torch._utils._rebuild_tensor_v2
+  - !!python/object/apply:torch.storage._load_from_bytes
+    - !!binary |
+      gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+      AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+      aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+      Z2UKcQFYDgAAADk0ODQwODU5OTY0NDMycQJYAwAAAGNwdXEDSwlOdHEEUS6AAl1xAFgOAAAAOTQ4
+      NDA4NTk5NjQ0MzJxAWEuCQAAAAAAAAA9yg5CH4UzP+F69D8zM4c/j8KRP83MzD9m3lFFM7OpQQrX
+      Mz8=
+  - 0
+  - !!python/tuple
+    - 9
+  - !!python/tuple
+    - 1
+  - false
+  - !!python/object/apply:collections.OrderedDict
+    - []
+- !!python/object/apply:torch._utils._rebuild_tensor_v2
+  - !!python/object/apply:torch.storage._load_from_bytes
+    - !!binary |
+      gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+      AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+      aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+      Z2UKcQFYDgAAADk0ODQwODYwMDE0NTYwcQJYAwAAAGNwdXEDSwlOdHEEUS6AAl1xAFgOAAAAOTQ4
+      NDA4NjAwMTQ1NjBxAWEuCQAAAAAAAAD/ZTVBf37qPm1eJz9gsAc/8oHNP6AZoD/BXjVFUUNEQSU2
+      6j4=
+  - 0
+  - !!python/tuple
+    - 9
+  - !!python/tuple
+    - 1
+  - false
+  - !!python/object/apply:collections.OrderedDict
+    - []
+- - gaussian
+  - flow++
+  - flow++
+  - flow++
+  - flow++
+  - flow++
+data_priors: null
+model: !!python/name:layers.causal_stacknf.CausalStackNF ''
+priors: !!python/object:torch.distributions.multivariate_normal.MultivariateNormal
+  _batch_shape: !!python/object/apply:torch.Size
+  - !!python/tuple []
+  _event_shape: !!python/object/apply:torch.Size
+  - !!python/tuple
+    - 9
+  _unbroadcasted_scale_tril: !!python/object/apply:torch._utils._rebuild_tensor_v2
+  - !!python/object/apply:torch.storage._load_from_bytes
+    - !!binary |
+      gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+      AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+      aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+      Z2UKcQFYDgAAADk0ODQwODYwMTEwNjcycQJYBgAAAGN1ZGE6MHEDS1FOdHEEUS6AAl1xAFgOAAAA
+      OTQ4NDA4NjAxMTA2NzJxAWEuUQAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      gD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAgD8=
+  - 0
+  - !!python/tuple
+    - 9
+    - 9
+  - !!python/tuple
+    - 1
+    - 9
+  - false
+  - !!python/object/apply:collections.OrderedDict
+    - []
+  covariance_matrix: !!python/object/apply:torch._utils._rebuild_tensor_v2
+  - !!python/object/apply:torch.storage._load_from_bytes
+    - !!binary |
+      gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+      AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+      aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+      Z2UKcQFYDgAAADk0ODQwODU5NTc4NjcycQJYBgAAAGN1ZGE6MHEDS1FOdHEEUS6AAl1xAFgOAAAA
+      OTQ4NDA4NTk1Nzg2NzJxAWEuUQAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      gD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAAAgD8=
+  - 0
+  - !!python/tuple
+    - 9
+    - 9
+  - !!python/tuple
+    - 9
+    - 1
+  - false
+  - !!python/object/apply:collections.OrderedDict
+    - []
+  loc: !!python/object/apply:torch._utils._rebuild_tensor_v2
+  - !!python/object/apply:torch.storage._load_from_bytes
+    - !!binary |
+      gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+      AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+      aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+      Z2UKcQFYDgAAADk0ODQwODYwMTEwMjg4cQJYBgAAAGN1ZGE6MHEDSwlOdHEEUS6AAl1xAFgOAAAA
+      OTQ4NDA4NjAxMTAyODhxAWEuCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      AAAAAAA=
+  - 0
+  - !!python/tuple
+    - 9
+  - !!python/tuple
+    - 1
+  - false
+  - !!python/object/apply:collections.OrderedDict
+    - []

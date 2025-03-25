@@ -1,0 +1,41 @@
+device: cuda
+dim: 4
+dropout: 0.0
+edge_index: !!python/object/apply:numpy.core.multiarray._reconstruct
+  args:
+  - !!python/name:numpy.ndarray ''
+  - !!python/tuple
+    - 0
+  - !!binary |
+    Yg==
+  state: !!python/tuple
+  - 1
+  - !!python/tuple
+    - 2
+    - 7
+  - !!python/object/apply:numpy.dtype
+    args:
+    - i8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - false
+  - !!binary |
+    AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAIAAAAAAAAAAwAAAAAAAAAA
+    AAAAAAAAAAEAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAIAAAAAAAAAAwAAAAAAAAADAAAAAAAAAA==
+hidden_dec_channels: 32
+hidden_dim_of_z: 4
+hidden_enc_channels: 32
+model: pna
+num_dec_layers: 4
+num_enc_layers: 1
+post_layers: 1
+pre_layers: 1

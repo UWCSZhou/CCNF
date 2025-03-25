@@ -1,0 +1,75 @@
+device: cuda
+dim: 6
+dropout: 0.0
+edge_index: !!python/object/apply:numpy.core.multiarray._reconstruct
+  args:
+  - !!python/name:numpy.ndarray ''
+  - !!python/tuple
+    - 0
+  - !!binary |
+    Yg==
+  state: !!python/tuple
+  - 1
+  - !!python/tuple
+    - 2
+    - 14
+  - !!python/object/apply:numpy.dtype
+    args:
+    - i8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - false
+  - !!binary |
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAgAAAAAAAAAC
+    AAAAAAAAAAIAAAAAAAAAAwAAAAAAAAADAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAA
+    AAAAAAAAAQAAAAAAAAACAAAAAAAAAAEAAAAAAAAAAwAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAwAA
+    AAAAAAAEAAAAAAAAAAMAAAAAAAAABQAAAAAAAAAEAAAAAAAAAAUAAAAAAAAABQAAAAAAAAA=
+hidden_dec_channels: 32
+hidden_dim_of_z: 4
+hidden_enc_channels: 32
+model: pna
+mu: !!python/object/apply:torch._utils._rebuild_tensor_v2
+- !!python/object/apply:torch.storage._load_from_bytes
+  - !!binary |
+    gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+    AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+    aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+    Z2UKcQFYDgAAADkzODI5MTg0NjUzNzkycQJYAwAAAGNwdXEDSwZOdHEEUS6AAl1xAFgOAAAAOTM4
+    MjkxODQ2NTM3OTJxAWEuBgAAAAAAAAAzbg0800/cPye+Fj+QoD9AqQ1NP/IzBz8=
+- 0
+- !!python/tuple
+  - 6
+- !!python/tuple
+  - 1
+- false
+- !!python/object/apply:collections.OrderedDict
+  - []
+num_dec_layers: 4
+num_enc_layers: 1
+post_layers: 1
+pre_layers: 1
+std: !!python/object/apply:torch._utils._rebuild_tensor_v2
+- !!python/object/apply:torch.storage._load_from_bytes
+  - !!binary |
+    gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+    AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+    aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+    Z2UKcQFYDgAAADkzODI5MTg1NzAyMDMycQJYAwAAAGNwdXEDSwZOdHEEUS6AAl1xAFgOAAAAOTM4
+    MjkxODU3MDIwMzJxAWEuBgAAAAAAAAAkiH8/rQbCP8wRNT//+kpAKMxsPx+cIUA=
+- 0
+- !!python/tuple
+  - 6
+- !!python/tuple
+  - 1
+- false
+- !!python/object/apply:collections.OrderedDict
+  - []
